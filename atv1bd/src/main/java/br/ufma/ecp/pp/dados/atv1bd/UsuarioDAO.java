@@ -1,7 +1,7 @@
 package br.ufma.ecp.pp.dados.atv1bd;
 	
 // Classe DAO(Data Access Object)
-
+// Ver fim dá página @Override em recovery
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UsuarioDAO {
+public class UsuarioDAO implements AbstractDAO<Usuario> {
 	
 	private Connection conn;
 	
@@ -90,5 +90,6 @@ public class UsuarioDAO {
 			u.printStackTrace();
 		}
 	}
+
 }
 
